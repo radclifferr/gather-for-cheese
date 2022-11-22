@@ -1,0 +1,9 @@
+.footer{
+    height: 200px;
+    background-color: var(--global-theme-color);
+    margin-top: auto;
+    display: flex;
+}
+.footer-logo{
+    height: 100px;
+}
