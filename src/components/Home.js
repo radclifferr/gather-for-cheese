@@ -14,7 +14,6 @@ const Home = () => {
                 <div className="welcome-copy">Custom cutting boards and charcuterie boards for that special someone in your life</div>
                 <img src={heroImageTwo} alt="" className="right-hero-image" />
             </div>
-
             <img src={exploreCuttingBoards} alt="" className="explore-images left" />
             <img src={exploreCharcuterieBoards} alt="" className="explore-images right" />
 
