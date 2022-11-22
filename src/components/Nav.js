@@ -14,7 +14,8 @@ const Nav = () => {
                 <div className="tab">About</div>
                 <div className="tab">Contact</div>
             </div>
-            <img className = "shopping-cart" src={ShoppingCart} alt=""/>
+            <img className = "shopping-cart" src={ShoppingCart} alt=""/> 
+
         </div>
         
     )
