@@ -1,0 +1,22 @@
+.nav-bar-container {
+    background-color: var(--global-theme-color);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+}
+.tab-container {
+    display:flex;
+    gap: 20px;
+}
+.shopping-cart {
+    height: 33px;
+    padding-right: 10px;
+}
+.logo-container {
+    max-height: 70px;
+    padding-left: 20px;
+}
