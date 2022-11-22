@@ -1,8 +1,9 @@
 .nav-bar-container {
     background-color: var(--global-theme-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
     align-items: center;
-    display: flex;
-    justify-content: space-between;
     height: 110px;
     font-size: 1.5rem;
     color: white;
@@ -11,12 +12,15 @@
 .tab-container {
     display:flex;
     gap: 20px;
+    justify-self: center;
 }
+
 .shopping-cart {
     height: 33px;
     padding-right: 10px;
+    justify-self: end;
 }
 .logo-container {
-    max-height: 100px;
+    max-width: 300px;
     padding-left: 20px;
 }
