@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 :root{
   --global-theme-color: rgb(77, 99, 160);
+  --global-background-color: rgb(238, 238, 238);
   --global-fonts: 'Libre Bakerville', serif, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
 }
@@ -9,5 +10,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--global-background-color);
   
 }

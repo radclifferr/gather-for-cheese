@@ -1,3 +1,42 @@
-.content-container{
-    height: 1000px;
+.home-page-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-hero-image,
+.right-hero-image,
+.hero-copy, 
+.explore-images {
+    max-width: 650px;
+    border-radius: 10px;
+    text-align: center;
+}
+.hero-copy, 
+.explore-images,
+.right {
+    justify-self: start;
+}
+
+
+
+
+.left-hero-image,
+.explore-image,
+.left {
+    justify-self: end;
+}
+.welcome{
+    font-weight: 800;
+    font-size: 3rem;
+}
+.welcome-copy {
+    font-size: 2rem;
+}
+
+
+.right-hero-image {
+    grid-column: 2;
 }
