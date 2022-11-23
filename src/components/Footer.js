@@ -13,7 +13,6 @@ const Footer = () => {
                 <li className="quick-link-header">Quick Links</li>
                 <li className="footer-tab">Shop</li>
                 <li className="footer-tab">Blog</li>
-                <li className="footer-tab">About</li>
                 <li className="footer-tab">Contact</li>
             </ul>
             
