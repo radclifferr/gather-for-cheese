@@ -25,7 +25,7 @@ const Footer = () => {
             
             <ul className="policy-links-container">
                 <li>
-                    <Link to="/Returns-Refunds-Policy">Returns And Refunds Policy</Link>
+                    <Link to="/Shipping-Returns-Policy">Shipping And Return Policy</Link>
                 </li>
                 <li>
                     <Link to="/Terms-Of-Service">Terms Of Service And Privacy Policy</Link>

@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/TermsOfService.css"
 
 const TermsOfService = () => {
     return (

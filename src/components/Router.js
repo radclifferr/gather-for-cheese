@@ -5,7 +5,7 @@ import Home from "./Home"
 import Shop from "./Shop"
 import Blog from "./Blog"
 import Contact from "./Contact"
-import ReturnsRefunds from "./ReturnsRefunds"
+import ShippingReturns from "./ShippingReturns"
 import TermsOfService from "./TermsOfService"
 import Cart from "./Cart"
 
@@ -21,8 +21,8 @@ const Router = () => {
         <Route path = "/Blog" element ={<Blog />} /> 
         <Route path = "/Contact" element = {<Contact />} />
         <Route path = "/Cart" element = {<Cart />} />
-        <Route path = "/Returns-Refunds-Policy" element= {<ReturnsRefunds />} />
-        <Route path = "/Terms-Of-Service" element= {<TermsOfService />} />
+        <Route path = "/Shipping-Returns-Policy" element= {<ShippingReturns />} />
+        <Route path = "/Terms-Of-Service-Policy" element= {<TermsOfService />} />
       </Routes>
       <Footer />
     </BrowserRouter>

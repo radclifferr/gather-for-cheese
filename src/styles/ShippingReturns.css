@@ -1,0 +1,5 @@
+.returns-container {
+    flex-direction: column;
+    padding-left: 20px;
+    max-width: 500px;
+}
