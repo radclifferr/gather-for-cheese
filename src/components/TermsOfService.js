@@ -2,7 +2,7 @@ import React from "react";
 
 const TermsOfService = () => {
     return (
-        <div>RTerms Of Service Page</div>
+        <div>Terms Of Service Page</div>
     )
 }
 export default TermsOfService;
