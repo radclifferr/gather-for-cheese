@@ -14,6 +14,24 @@
     gap: 20px;
     justify-self: center;
 }
+.tab {
+    text-decoration: none;
+    color: inherit;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: 600;
+    transition-duration: .25s;
+    
+    
+}
+
+.tab:hover,
+.tab:active {
+    background-color: var(--global-background-color);
+    color: black;
+    transition: ease;
+    transition-duration: .25s;
+}
 
 .shopping-cart {
     height: 33px;
