@@ -28,7 +28,7 @@ const Footer = () => {
                     <Link to="/Shipping-Returns-Policy">Shipping And Return Policy</Link>
                 </li>
                 <li>
-                    <Link to="/Terms-Of-Service">Terms Of Service And Privacy Policy</Link>
+                    <Link to="/Terms-Of-Service-Policy">Terms Of Service And Privacy Policy</Link>
                 </li>
                 <li>
                     <div>© 2022 GatherForCheese.com</div>
