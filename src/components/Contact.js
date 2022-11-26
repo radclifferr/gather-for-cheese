@@ -10,16 +10,27 @@ const Contact = () => {
         email: "",
         message: ""
     })
+    const [getResponse, setResponse] = useState("")
+
+
     const onUserInput = (e) => {
         setForm({...getForm, [e.target.name]: e.target.value })
-        
     }
+
+    
     const onSend = () => {
         setForm({
             name: "",
             email: "",
             message: ""
         })
+        setResponse("Message Submitted Successfully!")
+    }
+
+
+    const onHandleError = () => {
+        setResponse("Sorry we had a bit of trouble submitting your message, please try again!")
+
     }
 
     const sendEmail = (e) => {
@@ -29,8 +40,7 @@ const Contact = () => {
         .then((result) => {
             onSend()
         }, (error) => {
-            console.log("hi")
-            console.log(error.text);
+            onHandleError()
         });
   };
 
@@ -54,6 +64,7 @@ const Contact = () => {
                     <textarea name="message" value= {getForm.message} onChange={onUserInput}/>
                     <input type="submit" value="Send"/>
                 </form>
+                <div>{getResponse}</div>
             </div>
         </div>
     )
