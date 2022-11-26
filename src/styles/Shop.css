@@ -1,7 +1,6 @@
 .shop-page{
     background-color: var(--global-background-color);
 }
-
 .shop-header{
     text-align: center;
 }
@@ -13,8 +12,6 @@
     align-items: center;
     justify-content: center;
 }
-
-
 .item-card-container {
     max-width: 300px;
     background-color: white;
@@ -35,7 +32,6 @@
     font-size: 1.25rem;
     padding: 5px;
 }
-
 .item-card-container>button {
     border: none;
     padding: 6px;
@@ -44,4 +40,12 @@
     border-radius: 10px;
     background-color: var(--global-theme-color);
     color:white;
+}
+
+.item-card-container>button:hover {
+    transition: ease;
+    transition-duration: .25s;
+    background-color: var(--global-background-color);
+    color: black;
+    font-weight: 800;
 }

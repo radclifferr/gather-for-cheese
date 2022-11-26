@@ -57,8 +57,7 @@
     color: inherit;
     transition-duration: .25s;
     font-weight: 600;
-    border-radius: 10px;
-    
+    border-radius: 10px; 
 }
 
 .policy-links-container>li {
