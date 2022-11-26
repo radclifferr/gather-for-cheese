@@ -1,3 +1,27 @@
 .contact-page-container {
     display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+.contact-page-copy{
+    max-width: 500px;
+}
+.contact-page-copy>img{
+    max-width: 350px;
+    border-radius: 10px;;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1.25rem;
+}
+.form>input,
+.form>textarea {
+    font-family: inherit;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 1.15rem;
 }

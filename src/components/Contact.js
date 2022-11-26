@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import "../styles/Contact.css"
 import emailjs from '@emailjs/browser';
+import contactUs from "../images/contact-us.jpg"
 
 
 const Contact = () => {
@@ -47,22 +48,24 @@ const Contact = () => {
 
     return (
         <div className="contact-page-container">
-            <div>
+            <div className="contact-page-copy">
                 <h1>Get In Touch!</h1>
                 <p>Please reach out if you have any questions regarding one of our products or have any issues with one of your orders.</p>
                 <p>We will be happy to help!</p>
                 <h2>gatherforcheese@gmail.com</h2>
+                <img src={contactUs} alt="" />
             </div>
             <div>
                 <h1>Send Us A Message</h1>
-                <form onSubmit={sendEmail} ref={form}>
-                    <label>Name</label>
-                    <input type="text" name="name" value={getForm.name} onChange={onUserInput}/>
-                    <label>Email</label>
-                    <input type="email" name="email" value={getForm.email} onChange={onUserInput}/>
-                    <label>Message</label>
-                    <textarea name="message" value= {getForm.message} onChange={onUserInput}/>
-                    <input type="submit" value="Send"/>
+                <div>Fields marked with a * are required</div>
+                <form onSubmit={sendEmail} ref={form} className="form">
+                    <label>Name*</label>
+                    <input type="text" name="name" value={getForm.name} onChange={onUserInput} required />
+                    <label>Email*</label>
+                    <input type="email" name="email" value={getForm.email} onChange={onUserInput} required/>
+                    <label>Message*</label>
+                    <textarea name="message" value= {getForm.message} rows="7" cols="50" onChange={onUserInput} required/>
+                    <input type="submit" value="Send Your Message"/>
                 </form>
                 <div>{getResponse}</div>
             </div>
