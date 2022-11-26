@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-import "../styles/Cart.css"
+import "../styles/Shop.css"
 import heroImageOne from "../images/hero-image-one.jpg"
 
 
@@ -36,6 +36,7 @@ const Shop = () => {
             itemPrice: 175,
             itemNumber: 4
         },
+        
     ])
     return (
         <div className="shop-page">
