@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Shop.css"
+import { Link } from "react-router-dom"
 
 const Shop = (props) => {
     return (
@@ -12,7 +13,7 @@ const Shop = (props) => {
                         <img src={item.itemMainImage} className="item-main-image" alt="" />
                         <div className="item-card-name">{item.itemName}</div>
                         <div className="item-card-price">${item.itemPrice}</div>
-                        <button>See Item Details</button>
+                        <Link to = {`/Shop/${item.itemName}` } state={item.itemNumber}><button>See Item Details</button></Link>
                     </div>
                     )
                 })}
