@@ -1,52 +1,12 @@
-import React, {useState} from "react";
-
+import React from "react";
 import "../styles/Shop.css"
-import heroImageOne from "../images/hero-image-one.jpg"
 
-
-
-
-const Shop = () => {
-    const [getItems, setItems] = useState([
-        {
-            itemName: "Cutting Board 1",
-            itemDescription: "This cutting board is great", 
-            itemMainImage: heroImageOne,
-            itemPrice: 200, 
-            itemNumber: 1,
-            itemPersonalization: "",
-        },
-        {
-            itemName: "Cutting Board 1",
-            itemDescription: "This cutting board is great", 
-            itemMainImage: heroImageOne,
-            itemPrice: 350, 
-            itemNumber: 2,
-            itemPersonalization: ""
-        },
-        {
-            itemName: "Cutting Board 1",
-            itemDescription: "This cutting board is great", 
-            itemMainImage: heroImageOne,
-            itemPrice: 152,
-            itemNumber: 3,
-            itemPersonalization: ""
-        },
-        {
-            itemName: "Cutting Board 1",
-            itemDescription: "This cutting board is great", 
-            itemMainImage: heroImageOne, 
-            itemPrice: 175,
-            itemNumber: 4,
-            itemPersonalization: ""
-        },
-        
-    ])
+const Shop = (props) => {
     return (
-        <div className="shop-page">
+        <div className="shop-page"> 
             <h1 className="shop-header">Shop</h1>
             <div className="shop-container">
-                {getItems.map((item, index) => {
+                {props.getItems.map((item, index) => {
                     return (
                     <div className="item-card-container" key= {item.itemNumber} >
                         <img src={item.itemMainImage} className="item-main-image" alt="" />
