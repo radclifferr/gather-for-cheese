@@ -1,0 +1,8 @@
+.item-page-container{
+    display: flex;
+}
+
+
+.product-image {
+    max-width: 500px;
+}

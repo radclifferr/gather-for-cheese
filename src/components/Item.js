@@ -1,12 +1,25 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom"
+import "../styles/Item.css"
 
 const Item = (props) => {
-    console.log(props)
     const location = useLocation()
-    console.log(location)
+    const index = location.state.itemNumber
+    let product = props.getItems[index]
     return (
-        "Item/ Product Detailed Page"
+        <div className="item-page-container">
+            <img src={product.itemMainImage} alt=""  className="product-image"/>
+            <div>
+                <div>{product.itemName}</div>
+                <div>{product.itemDescription}</div>
+                <div>${product.itemPrice}</div>
+
+                <button>Add To Cart</button>
+            </div>
+            
+
+        </div>
+
     )
 }
 

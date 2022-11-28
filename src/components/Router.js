@@ -22,7 +22,7 @@ const Router = () => {
         itemDescription: "This cutting board is great", 
         itemMainImage: heroImageOne,
         itemPrice: 200, 
-        itemNumber: 1,
+        itemNumber: 0,
         itemPersonalization: "",
     },
     {
@@ -30,7 +30,7 @@ const Router = () => {
         itemDescription: "This cutting board is great", 
         itemMainImage: heroImageOne,
         itemPrice: 350, 
-        itemNumber: 2,
+        itemNumber: 1,
         itemPersonalization: ""
     },
     {
@@ -38,7 +38,7 @@ const Router = () => {
         itemDescription: "This cutting board is great", 
         itemMainImage: heroImageOne,
         itemPrice: 152,
-        itemNumber: 3,
+        itemNumber: 2,
         itemPersonalization: ""
     },
     {
@@ -46,7 +46,7 @@ const Router = () => {
         itemDescription: "This cutting board is great", 
         itemMainImage: heroImageOne, 
         itemPrice: 175,
-        itemNumber: 4,
+        itemNumber: 3,
         itemPersonalization: ""
     },
     
