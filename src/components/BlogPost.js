@@ -1,9 +1,21 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
+import "../styles/BlogPost.css"
 
 const BlogPost = (props) => {
-    console.log(props)
+    const location = useLocation()
+    let index = location.state.postNumber
+    let blogPost = props.getBlogPosts[index]
+    
+
     return (
-        "Individual Blog Post!"
+        <div className="blog-post-page-container">
+            <h1>{blogPost.postTitle}</h1>
+            <img src={blogPost.postHeaderImage} alt="" className="post-header-image"/>
+            <img src={blogPost.postSecondaryImage} alt="" className="post-secondary-image" />
+            <div className="post-long-description">{blogPost.postLongDescription}</div>
+            <div className="post-recipe-description">{blogPost.postRecipeDescription}</div>
+        </div>
     )
 }
 
