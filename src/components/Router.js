@@ -80,12 +80,12 @@ const Router = () => {
 ])
   const [getCart, setCart] = useState([])
 
-  const addItemToCart= (item) => {
+  const addItemToCart= (product) => {
     const tempCart = getCart
-    tempCart.push(item)
-    console.log(tempCart)
+    tempCart.push(product)
     setCart(tempCart)
   }
+
 
   return (
     <BrowserRouter>

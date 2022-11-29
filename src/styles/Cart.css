@@ -1,0 +1,16 @@
+.cart-item-container{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: space-evenly;
+}
+
+
+.cart-image{
+    max-width: 200px;
+    border-radius: 10px;
+}

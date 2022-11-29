@@ -1,12 +1,18 @@
 import React from "react";
-import { useLocation, Link } from "react-router-dom"
+import { useLocation, Link} from "react-router-dom"
 import "../styles/Item.css"
 
 const Item = (props) => {
     const location = useLocation()
     const index = location.state.itemNumber
     let product = props.getItems[index]
+
+    const onAddPersonalization = (e) => {
+        product.itemPersonalization= e.target.value
+    }
+
     return (
+        console.log(product.itemPersonalization),
         <div className="item-page-container">
             <img src={product.itemMainImage} alt=""  className="product-image"/>
             <div>
@@ -15,9 +21,12 @@ const Item = (props) => {
                 <div>${product.itemPrice}</div>
                 <form>
                     <label htmlFor ="personalization">Enter your product personalization: </label>
-                    <input type="text" id="personalization" maxLength={20} required/>
+                    <input type="text" id="personalization" maxLength={20} required onChange={onAddPersonalization}/>
                 </form>
-                <button onClick = {() => props.addItemToCart(product)}>Add To Cart</button>
+                <button onClick = {() => {
+                    props.addItemToCart(product)
+                    
+                     }}>Add To Cart</button>
             </div>
             
 
