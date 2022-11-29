@@ -78,17 +78,26 @@ const Router = () => {
         postRecipeDescription: "This is where the recipe will go"
     },
 ])
+  const [getCart, setCart] = useState([])
+
+  const addItemToCart= (item) => {
+    const tempCart = getCart
+    tempCart.push(item)
+    console.log(tempCart)
+    setCart(tempCart)
+  }
+
   return (
     <BrowserRouter>
       <Nav />
       <Routes>
         <Route path ="/" element ={<Home />} />
         <Route path ="/Shop" element = {<Shop getItems ={getItems} />} />
-          <Route path = "/Shop/:Item" element = {<Item getItems ={getItems} />} />
+          <Route path = "/Shop/:Item" element = {<Item getItems ={getItems} getCart={getCart} setCart={setCart} addItemToCart={addItemToCart} />} />
         <Route path = "/Blog" element ={<Blog  getBlogPosts ={getBlogPosts} />} /> 
           <Route path = "/Blog/:BlogPost" element={<BlogPost getBlogPosts={getBlogPosts} />} />
         <Route path = "/Contact" element = {<Contact />} />
-        <Route path = "/Cart" element = {<Cart />} />
+        <Route path = "/Cart" element = {<Cart getCart={getCart} setCart={setCart} />} />
         <Route path = "/Shipping-Returns-Policy" element= {<ShippingReturns />} />
         <Route path = "/Terms-Of-Service-Policy" element= {<TermsOfService />} />
       </Routes>

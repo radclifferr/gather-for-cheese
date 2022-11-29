@@ -14,8 +14,10 @@ const Item = (props) => {
                 <div>{product.itemDescription}</div>
                 <div>${product.itemPrice}</div>
                 <form>
+                    <label htmlFor ="personalization">Enter your product personalization: </label>
+                    <input type="text" id="personalization" maxLength={20} required/>
                 </form>
-                <button>Add To Cart</button>
+                <button onClick = {() => props.addItemToCart(product)}>Add To Cart</button>
             </div>
             
 
