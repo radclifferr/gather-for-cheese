@@ -21,11 +21,15 @@ const Router = () => {
   const [getCart, setCart] = useState([])
 
   const addItemToCart= (product, personalValue) => {
-    const tempCart = getCart
-    console.log(personalValue)
-    console.log(product)
+    const tempCart = [...getCart]
     product.itemPersonalization = personalValue
     tempCart.push(product)
+    setCart(tempCart)
+  }
+  const removeItemFromCart = (e) => {
+    const tempCart = [...getCart]
+    console.log(e.target.id)
+    tempCart.splice(e.target.id,1)
     console.log(tempCart)
     setCart(tempCart)
   }
@@ -40,7 +44,7 @@ const Router = () => {
         <Route path = "/Blog" element ={<Blog  getBlogPosts ={blogPosts} />} /> 
           <Route path = "/Blog/:BlogPost" element={<BlogPost getBlogPosts={blogPosts} />} />
         <Route path = "/Contact" element = {<Contact />} />
-        <Route path = "/Cart" element = {<Cart getCart={getCart} setCart={setCart} />} />
+        <Route path = "/Cart" element = {<Cart getCart={getCart} setCart={setCart} removeItemFromCart={removeItemFromCart}/>} />
         <Route path = "/Shipping-Returns-Policy" element= {<ShippingReturns />} />
         <Route path = "/Terms-Of-Service-Policy" element= {<TermsOfService />} />
       </Routes>

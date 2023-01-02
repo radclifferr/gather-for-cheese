@@ -10,7 +10,7 @@ const Cart = (props) => {
                     <div>Item Name: {cartItem.itemName}</div>
                     <div>Item Price: ${cartItem.itemPrice}</div>
                     <div>Item Personalization: {cartItem.itemPersonalization}</div>
-                    <button>Remove From Cart</button>
+                    <button id= {index} onClick = {props.removeItemFromCart} >Remove From Cart</button>
                 </div>
             
             )
