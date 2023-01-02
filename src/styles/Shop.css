@@ -2,27 +2,30 @@
     background-color: var(--global-background-color);
 }
 .shop-header{
-    text-align: center;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    margin-left: 50px;
 }
 
 .shop-container {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
     justify-content: center;
 }
 .item-card-container {
-    max-width: 300px;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
 }
 .item-card-container> img {
-    max-width: 300px;
-    border-radius: 10px;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
 }
 .item-card-name{
     font-weight: 800;
@@ -31,21 +34,4 @@
 .item-card-price{
     font-size: 1.25rem;
     padding: 5px;
-}
-.item-card-container>button {
-    border: none;
-    padding: 6px;
-    font-family: inherit;
-    font-size: 1.35rem;
-    border-radius: 10px;
-    background-color: var(--global-theme-color);
-    color:white;
-}
-
-.item-card-container>button:hover {
-    transition: ease;
-    transition-duration: .25s;
-    background-color: var(--global-background-color);
-    color: black;
-    font-weight: 800;
 }
