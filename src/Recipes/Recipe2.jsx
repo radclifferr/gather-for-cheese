@@ -2,7 +2,7 @@
 import React from "react";
 
 
-const Recipe = () => {
+const Recipe2 = () => {
     return (
     <div>
         <h3>Here's what you'll need</h3>
@@ -27,5 +27,5 @@ const Recipe = () => {
     )
 }
 
-export default Recipe;
+export default Recipe2;
 
