@@ -25,7 +25,7 @@ const Item = (props) => {
                 <form>
                     <label htmlFor ="personalization">Enter your product personalization: </label>
                     <input type="text" id="personalization" maxLength={20} required />
-                    <button onClick = {handleAddToCart}>Add To Cart</button>
+                    <button onClick = {handleAddToCart} className="general-button">Add To Cart</button>
                 </form>
                 
             </div>

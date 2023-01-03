@@ -24,7 +24,6 @@ const Cart = (props) => {
                             <div>Item Personalization: {cartItem.itemPersonalization}</div>
                             <button id= {index} onClick = {props.removeItemFromCart} >Remove From Cart</button>
                         </div>
-                    
                     )
                 })}
             </>
