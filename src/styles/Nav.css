@@ -4,9 +4,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-content: center;
     align-items: center;
-    height: 110px;
     font-size: 1.5rem;
     color: white;
+    height: 110px;
     font-weight: 500;
 }
 .tab-container {
@@ -30,13 +30,30 @@
     transition: ease;
     transition-duration: .25s;
 }
+.header-logo-container{
+    height: 90px;
+    margin-left: 20px;
+}
 
 .shopping-cart {
     height: 33px;
     padding-right: 10px;
     justify-self: end;
 }
-.logo-container {
-    max-width: 300px;
-    padding-left: 20px;
+.active {
+    background-color: white;
+    color:black;
 }
+
+@media only screen and (max-width: 830px) {
+    .nav-bar-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        height: auto;
+    }
+    .header-logo-container{
+        padding-left: 0;
+    }
+
+  }

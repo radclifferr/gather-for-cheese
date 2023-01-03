@@ -38,7 +38,7 @@ const Router = () => {
     <BrowserRouter>
       <Nav />
       <Routes>
-        <Route path ="/" element ={<Home />} />
+        <Route path ="/" element ={<Home />} activeClassName="active" />
         <Route path ="/Shop" element = {<Shop getItems ={shopItems} />} />
           <Route path = "/Shop/:Item" element = {<Item getItems ={shopItems} getCart={getCart} setCart={setCart} addItemToCart={addItemToCart} />} />
         <Route path = "/Blog" element ={<Blog  getBlogPosts ={blogPosts} />} /> 

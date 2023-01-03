@@ -8,6 +8,11 @@
     font-size: 1.25rem;
 
 }
+.active {
+    background-color: white;
+    color:black;
+}
+
 
 .footer-logo-container{
     margin-top: 20px;
@@ -41,7 +46,7 @@
 .footer-tab > a{
     transition-duration: .25s;
     text-decoration: none;
-    color: inherit;
+    color: white;
     font-weight: 600;
 }
 .footer-tab:hover,

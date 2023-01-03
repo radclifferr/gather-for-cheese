@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Footer.css";
 import logoRectangle from "../images/logo-rectangle.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -13,22 +13,22 @@ const Footer = () => {
             <ul className="footer-quicklink-container">
                 <li className="quick-link-header">Quick Links</li>
                 <li className="footer-tab">
-                    <Link to="/Shop" >Shop</Link>
+                    <NavLink to="/Shop" >Shop</NavLink>
                 </li>
                 <li className="footer-tab">
-                    <Link to="/Blog" >Blog</Link>
+                    <NavLink to="/Blog" >Blog</NavLink>
                 </li>
                 <li className="footer-tab">
-                    <Link to="/Contact" >Contact</Link>
+                    <NavLink to="/Contact" >Contact</NavLink>
                 </li>
             </ul>
             
             <ul className="policy-links-container">
                 <li>
-                    <Link to="/Shipping-Returns-Policy">Shipping And Return Policy</Link>
+                    <NavLink to="/Shipping-Returns-Policy">Shipping And Return Policy</NavLink>
                 </li>
                 <li>
-                    <Link to="/Terms-Of-Service-Policy">Terms Of Service And Privacy Policy</Link>
+                    <NavLink to="/Terms-Of-Service-Policy">Terms Of Service And Privacy Policy</NavLink>
                 </li>
                 <li>
                     <div>© 2022 GatherForCheese.com</div>
