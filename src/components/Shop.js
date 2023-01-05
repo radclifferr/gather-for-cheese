@@ -10,7 +10,7 @@ const Shop = (props) => {
                 {props.getItems.map((item, index) => {
                     return (
                     <div className="item-card-container" key= {item.itemNumber} >
-                        <img src={item.itemMainImage} className="item-main-image" alt="" />
+                        <img src={item.images[0]} className="item-main-image" alt="" />
                         <div className="item-card-name">{item.itemName}</div>
                         <div className="item-card-price">${item.itemPrice}</div>
                         <Link to = {`/Shop/${item.itemName}` } state={item}><button className="general-button">See Item Details</button></Link>
