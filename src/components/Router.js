@@ -11,7 +11,7 @@ import TermsOfService from "./TermsOfService"
 import Cart from "./Cart"
 import Item from "./Item"
 import shopItems from "./shopItems"
-import blogPosts from "./blogPosts"
+import blogPostObject from "./blogPostObject"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, {useState} from "react";
@@ -41,8 +41,8 @@ const Router = () => {
         <Route path ="/" element ={<Home />} activeClassName="active" />
         <Route path ="/Shop" element = {<Shop getItems ={shopItems} />} />
           <Route path = "/Shop/:Item" element = {<Item getItems ={shopItems} getCart={getCart} setCart={setCart} addItemToCart={addItemToCart} />} />
-        <Route path = "/Blog" element ={<Blog  getBlogPosts ={blogPosts} />} /> 
-          <Route path = "/Blog/:BlogPost" element={<BlogPost getBlogPosts={blogPosts} />} />
+        <Route path = "/Blog" element ={<Blog  getBlogPosts ={blogPostObject} />} /> 
+          <Route path = "/Blog/:BlogPost" element={<BlogPost getBlogPosts={blogPostObject} />} />
         <Route path = "/Contact" element = {<Contact />} />
         <Route path = "/Cart" element = {<Cart getCart={getCart} setCart={setCart} removeItemFromCart={removeItemFromCart}/>} />
         <Route path = "/Shipping-Returns-Policy" element= {<ShippingReturns />} />
