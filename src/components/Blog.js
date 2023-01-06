@@ -12,9 +12,9 @@ const Blog = (props) => {
                     return (
                         <div className="post-container">
                             <div className="post-title">{post.postTitle}</div>
-                            <img src={post.postHeaderImage} alt="" />
-                            <div className="post-short-description">{post.postShortDescription}</div>
-                            <Link to={`/Blog/${post.postTitle}`} state={{postNumber: index}}><button>See Details</button></Link>
+                            <Link to={`/Blog/${post.postTitle}`} state={{postNumber: index}}><img src={post.postHeaderImage} alt="" /></Link>
+                            
+                            <Link to={`/Blog/${post.postTitle}`} state={{postNumber: index}}><button className="general-button">See Details</button></Link>
                         </div>
 
                     )
