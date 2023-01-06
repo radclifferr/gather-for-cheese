@@ -33,12 +33,14 @@
     text-align: center;
 }
 
+.item-data-container>form>input {
+    width: 50%;
+    align-self: center;
+}
+
+
 @media only screen and (max-width: 950px) {
     .item-page-container {
     flex-wrap: wrap;
-    }
-    .item-data-container>form>input {
-        width: 50%;
-        align-self: center;
     }
 }
