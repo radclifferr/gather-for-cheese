@@ -1,6 +1,44 @@
 .item-page-container{
     display: flex;
+    justify-content: center;
+    font-size: 1.4rem
+}
+
+.item-data-container {
+    margin: 30px;
+}
+.item-data-container>form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    margin: 20px;
+}
+.item-data-container>form>input {
+    height: 25px;
+    font-size: 1.4rem;
+    font-family: inherit;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+.item-data-container>form>button {
+    align-self: center;
 }
 .product-image {
     max-width: 500px;
+}
+.product-title{
+    text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+    .item-page-container {
+    flex-wrap: wrap;
+    }
+    .item-data-container>form>input {
+        width: 50%;
+        align-self: center;
+    }
 }
