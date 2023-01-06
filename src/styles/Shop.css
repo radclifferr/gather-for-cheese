@@ -22,7 +22,7 @@
     padding: 20px;
     margin: 20px;
 }
-.item-card-container> img {
+.item-card-container>a> img {
     border-radius: 5px;
     width: 100%;
     height: auto;
