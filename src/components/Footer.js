@@ -12,14 +12,14 @@ const Footer = () => {
             </div>
             <ul className="footer-quicklink-container">
                 <li className="quick-link-header">Quick Links</li>
-                <li className="footer-tab">
-                    <NavLink to="/Shop" >Shop</NavLink>
+                <li>
+                    <NavLink to="/Shop" className="footer-tab">Shop</NavLink>
                 </li>
-                <li className="footer-tab">
-                    <NavLink to="/Blog" >Blog</NavLink>
+                <li>
+                    <NavLink to="/Blog" className="footer-tab">Blog</NavLink>
                 </li>
-                <li className="footer-tab">
-                    <NavLink to="/Contact" >Contact</NavLink>
+                <li>
+                    <NavLink to="/Contact" className="footer-tab">Contact</NavLink>
                 </li>
             </ul>
             

@@ -8,10 +8,7 @@
     font-size: 1.25rem;
 
 }
-.active {
-    background-color: white;
-    color:black;
-}
+
 
 
 .footer-logo-container{
@@ -39,15 +36,22 @@
     list-style: none;
     font-size: 1.25rem;
 }
+.footer-quicklink-container>li {
+    padding: 3px;
+}
 .footer-tab{
     padding: 3px;
     border-radius: 10px;
 }
-.footer-tab > a{
-    transition-duration: .25s;
+.footer-tab{
     text-decoration: none;
     color: white;
     font-weight: 600;
+    transition-duration: .25s;
+}
+.active {
+    background-color: white;
+    color:black;
 }
 .footer-tab:hover,
 .footer-tab:active,
