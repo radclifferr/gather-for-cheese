@@ -1,11 +1,11 @@
 .contact-page-container {
     display: flex;
-    flex-wrap: wrap;
     padding: 20px;
     justify-content: center;
 }
 .contact-page-copy{
-    max-width: 500px;
+    max-width: 50vw;
+    font-size: 1.15rem
 }
 .contact-page-copy>img{
     max-width: 90%;
@@ -29,3 +29,13 @@
     font-size: 1.15rem;
     width: 100%;
 }
+
+@media only screen and (max-width: 1000px) {
+    .contact-page-container {
+        flex-wrap: wrap;
+    }
+    .contact-page-copy{
+        max-width: 90vw
+    }
+
+  }

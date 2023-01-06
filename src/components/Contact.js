@@ -3,7 +3,6 @@ import "../styles/Contact.css"
 import emailjs from '@emailjs/browser';
 import contactUs from "../images/contact-us.jpg"
 
-
 const Contact = () => {
     const form =useRef()
     const [getForm, setForm] = useState({
@@ -13,12 +12,9 @@ const Contact = () => {
     })
     const [getResponse, setResponse] = useState("")
 
-
     const onUserInput = (e) => {
         setForm({...getForm, [e.target.name]: e.target.value })
     }
-
-    
     const onSend = () => {
         setForm({
             name: "",
@@ -27,16 +23,12 @@ const Contact = () => {
         })
         setResponse("Message Submitted Successfully!")
     }
-
-
     const onHandleError = () => {
         setResponse("Sorry we had a bit of trouble submitting your message, please try again!")
 
     }
-
     const sendEmail = (e) => {
         e.preventDefault();
-
         emailjs.sendForm('service_ssiyxfq', 'template_theku2j', form.current , "K0IoWmta5ulI6j8q0")
         .then((result) => {
             onSend()
@@ -44,8 +36,6 @@ const Contact = () => {
             onHandleError()
         });
   };
-
-
     return (
         <div className="contact-page-container">
             <div className="contact-page-copy">
