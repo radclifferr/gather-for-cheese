@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import "../styles/Contact.css"
 import emailjs from '@emailjs/browser';
-import contactUs from "../images/contact-us.jpg"
 
 const Contact = () => {
     const form =useRef()
@@ -43,7 +42,7 @@ const Contact = () => {
                 <p>Please reach out if you have any questions regarding one of our products or have any issues with one of your orders.</p>
                 <p>We will be happy to help!</p>
                 <h2>gatherforcheese@gmail.com</h2>
-                <img src={contactUs} alt="" />
+                <img src={require("../images/contact-us.jpeg")} alt="" />
             </div>
             <div>
                 <h1>Send Us A Message</h1>
