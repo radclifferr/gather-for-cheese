@@ -11,8 +11,8 @@ const BlogPost = (props) => {
     return (
         <div className="blog-post-page-container">
             <h1>{blogPost.postTitle}</h1>
-            <img src={blogPost.postHeaderImage} alt="" className="post-header-image"/>
-            <img src={blogPost.postSecondaryImage} alt="" className="post-secondary-image" />
+            <img src={blogPost.images[0]} alt="" className="post-header-image"/>
+            <img src={blogPost.images[1]} alt="" className="post-secondary-image" />
             <div className="post-long-description">{blogPost.postLongDescription}</div>
             <div className="post-recipe-description">{blogPost.postRecipeDescription}</div>
         </div>
