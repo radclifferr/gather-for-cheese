@@ -1,10 +1,11 @@
 import React from "react";
 import { useLocation} from "react-router-dom"
 import "../styles/Item.css"
+import ProductCarousel from "./ProductCarousel";
 
 const Item = (props) => {
     const location = useLocation()
-    const index = location.state.itemNumber
+    const index = location.state.index
     let product = props.getItems[index]
 
 
@@ -16,19 +17,21 @@ const Item = (props) => {
     }
 
     return (
-        <div className="item-page-container">
-            <img src={product.itemMainImage} alt=""  className="product-image"/>
-            <div>
-                <div>{product.itemName}</div>
-                <div>{product.itemDescription}</div>
-                <div>${product.itemPrice}</div>
-                <form>
-                    <label htmlFor ="personalization">Enter your product personalization: </label>
-                    <input type="text" id="personalization" maxLength={20} required />
-                    <button onClick = {handleAddToCart} className="general-button">Add To Cart</button>
-                </form>
-                
+        <div>
+            <h1 className="product-title">{product.itemName}</h1>
+            <div className="item-page-container">
+                <ProductCarousel images={product.images}/>
+                <div className="item-data-container">
+                    <div className="item-description">{product.itemDescription}</div>
+                    <form>
+                        <label htmlFor ="personalization">Enter your product personalization: </label>
+                        <input type="text" id="personalization" maxLength={20} required />
+                        <div className="item-price">${product.itemPrice}</div>
+                        <button onClick = {handleAddToCart} className="general-button">Add To Cart</button>
+                    </form>
+                </div>
             </div>
+
             
 
         </div>
