@@ -13,7 +13,7 @@ const Shop = (props) => {
                         <img src={item.images[0]} className="item-main-image" alt="" />
                         <div className="item-card-name">{item.itemName}</div>
                         <div className="item-card-price">${item.itemPrice}</div>
-                        <Link to = {`/Shop/${item.itemName}` } state={item}><button className="general-button">See Item Details</button></Link>
+                        <Link to = {`/Shop/${item.itemName}` } state={{index}}><button className="general-button">See Item Details</button></Link>
                     </div>
                     )
                 })}
