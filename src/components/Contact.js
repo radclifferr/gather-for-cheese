@@ -54,7 +54,7 @@ const Contact = () => {
                     <input type="email" name="email" value={getForm.email} onChange={onUserInput} required/>
                     <label>Message*</label>
                     <textarea name="message" value= {getForm.message} rows="7" cols="50" onChange={onUserInput} required/>
-                    <input type="submit" class="general-button" value="Send Your Message"/>
+                    <input type="submit" className="general-button" value="Send Your Message"/>
                 </form>
                 <div>{getResponse}</div>
             </div>
