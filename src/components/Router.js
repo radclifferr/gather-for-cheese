@@ -28,15 +28,13 @@ const Router = () => {
   }
   const removeItemFromCart = (e) => {
     const tempCart = [...getCart]
-    console.log(e.target.id)
     tempCart.splice(e.target.id,1)
-    console.log(tempCart)
     setCart(tempCart)
   }
 
   return (
     <BrowserRouter>
-      <Nav />
+      <Nav getCart={getCart}/>
       <Routes>
         <Route path ="/" element ={<Home />} activeClassName="active" />
         <Route path ="/Shop" element = {<Shop getItems ={shopItems} />} />
