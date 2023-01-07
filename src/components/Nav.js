@@ -5,7 +5,7 @@ import logoRectangle from "../images/logo-rectangle.png"
 import { Link, NavLink } from "react-router-dom"
 
 
-const Nav = () => {
+const Nav = (props) => {
     return (
         <div className="nav-bar-container">
             <Link to= "/" ><img className="header-logo-container" src={logoRectangle} alt="" /></Link>
@@ -15,7 +15,10 @@ const Nav = () => {
                 <NavLink to= "/Blog" className="tab">Blog</NavLink>
                 <NavLink to= "/Contact" className="tab">Contact</NavLink>
             </div>
-            <Link to= "/Cart" className = "shopping-cart" ><img  src={ShoppingCart} alt=""/></Link>
+            <Link to= "/Cart" className = "shopping-cart">
+                <img  src={ShoppingCart} alt=""/>
+                <div className="cart-quantity">{props.getCart.length}</div>
+            </Link>
         </div>
         
     )
