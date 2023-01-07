@@ -11,6 +11,12 @@
     gap: 20px;
     width: 80vw;
 }
+.cart-details{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
 .left-hero-image,
 .right-hero-image,
