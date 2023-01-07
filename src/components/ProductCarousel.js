@@ -42,7 +42,7 @@ const ProductCarousel = (props) => {
                 ref={slider => (setSlider1(slider))}
             >
             {props.images.map((slide) =>
-            <div className="slick-slide" key={slide.id}>
+            <div className="slick-slide" key={slide.id+1}>
                 <img className="slick-slide-image" src={slide} alt=""/>
             </div>
             )}
@@ -54,7 +54,7 @@ const ProductCarousel = (props) => {
             asNavFor={nav1}
             ref={slider => (setSlider2(slider))}>
             {props.images.map((slide) =>
-                <div className="slick-slide" key={slide.id}>
+                <div className="slick-slide" key={slide.id-1}>
                     <img className="slick-slide-image" src={slide} alt=""/>
                 </div>
             )}
