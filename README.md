@@ -15,4 +15,4 @@
 
 ## Demo
 ### Live: [Here](https://www.gatherforcheese.com)
-![Preview](src/images/gatherforcheese.mp4)
+![Preview](src/images/preview.gif)
