@@ -33,6 +33,7 @@
 .header-logo-container{
     height: 90px;
     margin-left: 20px;
+    padding-right: 20px;
 }
 .cart-quantity {
     background-color: red;
@@ -59,15 +60,28 @@
     color:black;
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 850px) {
     .nav-bar-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        justify-items: center;
+        display: flex;
+        flex-wrap: wrap;
         height: auto;
+        justify-content: center;
+        padding-bottom: 10px;
+        font-size: 1.35rem
     }
     .header-logo-container{
-        padding-left: 0;
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding-right: 0;
+    }
+    .tab-container {
+        gap: 5px;
+
+    }
+    .tab {
+        padding: 5px;
     }
 
   }
