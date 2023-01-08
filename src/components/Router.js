@@ -13,7 +13,7 @@ import Item from "./Item"
 import shopItems from "./shopItems"
 import blogPostObject from "./blogPostObject"
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import React, {useState} from "react";
 
 
@@ -33,7 +33,7 @@ const Router = () => {
   }
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Nav getCart={getCart}/>
       <Routes>
         <Route path ="/" element ={<Home />} activeClassName="active" />
@@ -47,7 +47,7 @@ const Router = () => {
         <Route path = "/Terms-Of-Service-Policy" element= {<TermsOfService />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
