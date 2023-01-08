@@ -14,6 +14,7 @@
 .cart-item-container{
     display: flex;
     margin: 10px;
+    gap: 10px;
     align-items: center;
     padding: 10px;
     border: 1px solid gray;
@@ -25,6 +26,7 @@
 .product-column> div:first-of-type{
     font-weight: 800;
     margin-bottom: 5px;
+    text-decoration: underline;
 }
 .cart-image{
     max-width: 300px;
@@ -59,7 +61,17 @@
 
 }
 .total-item> div:first-child{
-    font-weight: 800
+    font-weight: 800;
+}
+.upsell-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.upsell-container>div{
+    font-size: 1.25rem;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -74,10 +86,15 @@
     .cart-image{
         display: none;
     }
+    .upsell-image{
+        display: block;
+    }
+
     .cart-item-container{
         font-size: 1rem;
     }
-    .general-button{
+    .cart-item-container>button{
         font-size: 0.75rem;
     }
+
   }

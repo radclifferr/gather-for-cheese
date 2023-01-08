@@ -37,5 +37,8 @@
     .contact-page-copy{
         max-width: 90vw
     }
+    .contact-page-copy>h2{
+        font-size: 1.5rem;
+    }
 
   }

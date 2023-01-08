@@ -8,8 +8,8 @@ const Cart = (props) => {
         const index = Math.floor(Math.random() * shopItems.length)
         const randomShopItem = shopItems[index]
         return (
-            <div>
-                <img src={randomShopItem.images[0]} className="cart-image" alt=""></img>
+            <div className="upsell-container">
+                <img src={randomShopItem.images[0]} className="cart-image upsell-image" alt=""></img>
                 <div>{randomShopItem.itemName}</div>
                 <Link to = {`/Shop/${randomShopItem.itemName}` } state={{index}}><button className="general-button">See Item Details</button></Link>
             </div>
@@ -42,7 +42,7 @@ const Cart = (props) => {
                                     <div>${cartItem.itemPrice}</div>
                                 </div>
                                 <div className="product-column">
-                                    <div>Item Personalization</div>
+                                    <div>Personalization</div>
                                     <div>{cartItem.itemPersonalization}</div>
                                 </div>
                                 <button id= {index} onClick = {props.removeItemFromCart} className="general-button">Remove From Cart</button>
